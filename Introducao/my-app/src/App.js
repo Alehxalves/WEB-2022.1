@@ -1,11 +1,9 @@
-// import {Component} from "react";
-// import Questao01 from "./components/Atividade1/Questao01";
-// import Questao02 from "./components/Atividade1/Questao02";
-// import Questao03 from "./components/Atividade1/Questao03";
-// import Questao04 from "./components/Atividade1/Questao04";
-import { CapitaoAmerica as Ca, ViuvaNegra as Vn } from "./components/Vingadores/Avengers"
+//import {Component} from "react";
+import React  from "react";
+import "./App.css"
 
-// function App() {
+// import Questao01 from "./components/atividade1/Questao01";
+// function AppQuestao1() {
 //   return (
 //     <div className="App">
 //       <Questao01 />
@@ -13,7 +11,8 @@ import { CapitaoAmerica as Ca, ViuvaNegra as Vn } from "./components/Vingadores/
 //   );
 // }
 
-// function App() {
+// import Questao02 from "./components/atividade1/Questao02";
+// function AppQuestao2() {
 //   return (
 //     <div className="App">
 //       <Questao02 />
@@ -21,7 +20,8 @@ import { CapitaoAmerica as Ca, ViuvaNegra as Vn } from "./components/Vingadores/
 //   );
 // }
 
-// function App() {
+// import Questao03 from "./components/atividade1/Questao03";
+// function AppQuestao3() {
 //   return (
 //     <div className="App">
 //       <Questao03 />
@@ -29,7 +29,8 @@ import { CapitaoAmerica as Ca, ViuvaNegra as Vn } from "./components/Vingadores/
 //   );
 // }
 
-// function App() {
+// import Questao04 from "./components/atividade1/Questao04";
+// function AppQuestao4() {
 //   return (
 //     <div className="App">
 //       <Questao04 />
@@ -37,13 +38,62 @@ import { CapitaoAmerica as Ca, ViuvaNegra as Vn } from "./components/Vingadores/
 //   );
 // }
 
-function App() {
-  return (
-    <div className="App">
-      <Ca nome = 'Alex'/>
-      <Vn nome = 'Alex'/>
+// import { CapitaoAmerica as Ca, ViuvaNegra as Vn } from "./components/vingadores/Avengers";
+
+// function AppAvengers() {
+//   return (
+//     <div className="App">
+//       <Ca nome = 'Alex'/>
+//       <Vn nome = 'Alex'/>
+//     </div>
+//   )
+// }
+
+// import IMC from "./components/imc/IMC";
+
+// function AppIMC() {
+//   return (
+//     <div className="AppImc">
+//       <IMC altura={1.75} peso={76}/>
+//     </div>
+//   );
+// }
+
+// import Casa from "./components/hardcoded/Casa";
+// import Personagem from "./components/hardcoded/Personagem";
+
+// function AppGOT() {
+//   return (
+//     <div className="AppGOT">
+//       <Casa show="Game Of Thrones" casa="Genérica" horario="Nobre">
+//       <Personagem nome="Arya" />
+//       <Personagem nome="Tyrion" />
+//       <Personagem nome="Robert" />
+//       <Personagem nome="Danerys" />
+//       <Personagem nome="G.R.R.M" />
+//       </Casa>
+//     </div>
+//   );
+// }
+
+// import Pai from "./components/filhoPai/Pai";
+
+// function AppHardcoded() {
+//   return (
+//     <div className="AppHardcoded">
+//       <Pai/>
+//     </div>
+//   )
+// }
+
+import CidadeComClasse from "./components/cidades/CidadeComClasse";
+
+function AppCidade() {
+  return(
+    <div className="AppCidade">
+      <CidadeComClasse/>
     </div>
   )
 }
 
-export default App;
+export default AppCidade;
