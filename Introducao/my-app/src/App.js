@@ -1,9 +1,20 @@
+<<<<<<< HEAD
 //import {Component} from "react";
 import React  from "react";
 import "./App.css"
 
 // import Questao01 from "./components/atividade1/Questao01";
 // function AppQuestao1() {
+=======
+// import {Component} from "react";
+// import Questao01 from "./components/Atividade1/Questao01";
+// import Questao02 from "./components/Atividade1/Questao02";
+// import Questao03 from "./components/Atividade1/Questao03";
+// import Questao04 from "./components/Atividade1/Questao04";
+import { CapitaoAmerica as Ca, ViuvaNegra as Vn } from "./components/Vingadores/Avengers"
+
+// function App() {
+>>>>>>> 7213c575decf728a30929f9cca86895cbb9dc0d7
 //   return (
 //     <div className="App">
 //       <Questao01 />
@@ -11,8 +22,12 @@ import "./App.css"
 //   );
 // }
 
+<<<<<<< HEAD
 // import Questao02 from "./components/atividade1/Questao02";
 // function AppQuestao2() {
+=======
+// function App() {
+>>>>>>> 7213c575decf728a30929f9cca86895cbb9dc0d7
 //   return (
 //     <div className="App">
 //       <Questao02 />
@@ -20,8 +35,12 @@ import "./App.css"
 //   );
 // }
 
+<<<<<<< HEAD
 // import Questao03 from "./components/atividade1/Questao03";
 // function AppQuestao3() {
+=======
+// function App() {
+>>>>>>> 7213c575decf728a30929f9cca86895cbb9dc0d7
 //   return (
 //     <div className="App">
 //       <Questao03 />
@@ -29,8 +48,12 @@ import "./App.css"
 //   );
 // }
 
+<<<<<<< HEAD
 // import Questao04 from "./components/atividade1/Questao04";
 // function AppQuestao4() {
+=======
+// function App() {
+>>>>>>> 7213c575decf728a30929f9cca86895cbb9dc0d7
 //   return (
 //     <div className="App">
 //       <Questao04 />
@@ -38,6 +61,7 @@ import "./App.css"
 //   );
 // }
 
+<<<<<<< HEAD
 // import { CapitaoAmerica as Ca, ViuvaNegra as Vn } from "./components/vingadores/Avengers";
 
 // function AppAvengers() {
@@ -92,8 +116,19 @@ function AppCidade() {
   return(
     <div className="AppCidade">
       <CidadeComClasse/>
+=======
+function App() {
+  return (
+    <div className="App">
+      <Ca nome = 'Alex'/>
+      <Vn nome = 'Alex'/>
+>>>>>>> 7213c575decf728a30929f9cca86895cbb9dc0d7
     </div>
   )
 }
 
+<<<<<<< HEAD
 export default AppCidade;
+=======
+export default App;
+>>>>>>> 7213c575decf728a30929f9cca86895cbb9dc0d7
