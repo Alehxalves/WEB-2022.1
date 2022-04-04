@@ -4,9 +4,9 @@ import Baki from "./baki.png";
 const Hero = (props) => {
   const { name } = props;
   return (
-    <div>
+    <div class="personagem">
       <h1>{name}</h1>
-      <img src={Baki} alt={name} />
+      <img src={Baki} alt={name} id="img"/>
     </div>
   );
 };

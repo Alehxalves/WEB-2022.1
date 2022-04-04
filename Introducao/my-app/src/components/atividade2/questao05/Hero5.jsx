@@ -1,13 +1,14 @@
 import React from "react";
 
-const Enemy = (props) => {
-  const { name, imgUrl } = props;
+const Hero4 = (props) => {
+  const { name, imgUrl, arena} = props;
   return (
     <div className="personagem">
+      <h1>{arena}</h1>
       <h1>{name}</h1>
       <img src={imgUrl} alt={name} id="img"/>
     </div>
   );
 };
 
-export default Enemy;
+export default Hero4;

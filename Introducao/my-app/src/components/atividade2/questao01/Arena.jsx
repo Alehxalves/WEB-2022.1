@@ -1,11 +1,14 @@
-import Hero from "../questao01/Hero";
-import Enemy from "../questao01/Enemy";
+import Hero from "./Hero";
+import Enemy from "./Enemy";
 
 const Arena = () => {
   return (
-    <div className="img">
-      <Hero name="Baki" />
-      <Enemy name="Yujiro" />
+    <div>
+      <h1 className="fight">FIGHT</h1>
+      <span className="arena">
+        <Hero name="Baki" />
+        <Enemy name="Yujiro" />
+      </span>
     </div>
   );
 };

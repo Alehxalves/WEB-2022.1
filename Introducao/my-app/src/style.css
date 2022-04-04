@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'bloody';
+    src: url(./components/atividade2/fonts/BLOODY.TTF);
+}
+@font-face {
+    font-family: 'endgame';
+    src: url(./components/atividade2/fonts/Endgame\ DEMO.otf);
+}
+@font-face {
+    font-family: 'anotherdanger';
+    src: url(./components/atividade2/fonts/Endgame\ DEMO.otf);
+}
+
+.App {
+    text-align: right;
+
+}
+
+.arena {
+    border-radius: 20px;
+    width: 711px;
+    height: 356px;
+    display: flex;
+    background-image: url("https://pm1.narvii.com/6647/429e99a5d7ad6fb2738271ccae230c2091614a97_00.jpg");
+    margin-right:auto;
+    margin-left: auto;
+}
+
+.nameArena {
+    position: relative;
+    top: 60px;
+    text-align: center;
+    font-family: 'anotherdanger';
+}
+
+.fight{
+    position: relative;
+    top: 70px;
+    text-align: center;
+    font-family: 'bloody';
+    color: red;
+}
+
+.personagem{
+    text-align: center;
+    font-family: endgame;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+img{
+    border-radius: 20px;
+    width: 100%;
+    height: 60%;
+}
+
+
+
+
+  
+  

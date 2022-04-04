@@ -1,7 +1,7 @@
 import React from "react";
 
-const Enemy = (props) => {
-  const { name, imgUrl } = props;
+const Enemy4 = (props) => {
+  const { name, imgUrl} = props;
   return (
     <div className="personagem">
       <h1>{name}</h1>
@@ -10,4 +10,4 @@ const Enemy = (props) => {
   );
 };
 
-export default Enemy;
+export default Enemy4;

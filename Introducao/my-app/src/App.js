@@ -1,6 +1,6 @@
 //import {Component} from "react";
-import React  from "react";
-import "./App.css"
+import React from "react";
+import "./style.css"
 
 // import Questao01 from "./components/Atividade1/Questao01";
 
@@ -97,6 +97,42 @@ import "./App.css"
 //   )
 // }
 
+// import Arena from "./components/atividade2/questao02/Arena2"
 
+// function App() {
+//   return (
+//     <div className="App">
+//       <Arena/>
+//     </div>
+//   )
+// }
 
-export default AppCidade;
+import Imgs from "./components/atividade2/Imgs"
+import Arena5 from "./components/atividade2/questao05/Arena5"
+import World2 from "./components/atividade2/questao05/World2";
+
+function App() {
+  return (
+    <div className="App">
+      <World2>
+        <Arena5 
+          nameArena="Kahn's Arena"
+          nameHero="Baki" imgHero={Imgs.baki}
+          nameEnemy="Yujiro" imgEnemy={Imgs.yujiro}
+        />
+        <Arena5 
+          nameArena="Kombat Temple"
+          nameHero="Itadori" imgHero={Imgs.itadori}
+          nameEnemy="Hanami" imgEnemy={Imgs.hanami}
+        />
+        <Arena5 
+          nameArena="Lost Bridge"
+          nameHero="Deku" imgHero={Imgs.deku}
+          nameEnemy="Dabi" imgEnemy={Imgs.dabi}
+        />
+      </World2>
+    </div>
+  )
+}
+
+export default App;

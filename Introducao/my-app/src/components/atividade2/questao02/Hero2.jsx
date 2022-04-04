@@ -1,11 +1,11 @@
 import React from "react";
 
 const Hero = (props) => {
-  const { name, img } = props;
+  const { name, imgUrl } = props;
   return (
-    <div>
+    <div className="personagem">
       <h1>{name}</h1>
-      <img src={img} alt={name} />
+      <img src={imgUrl} alt={name} id="img"/>
     </div>
   );
 };
