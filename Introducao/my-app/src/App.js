@@ -87,14 +87,16 @@ import "./App.css"
 //   )
 // }
 
-import CidadeComClasse from "./components/cidades/CidadeComClasse";
+// import CidadeComClasse from "./components/cidades/CidadeComClasse";
 
-function AppCidade() {
-  return(
-    <div className="AppCidade">
-      <CidadeComClasse/>
-    </div>
-  )
-}
+// function AppCidade() {
+//   return(
+//     <div className="AppCidade">
+//       <CidadeComClasse/>
+//     </div>
+//   )
+// }
+
+
 
 export default AppCidade;
