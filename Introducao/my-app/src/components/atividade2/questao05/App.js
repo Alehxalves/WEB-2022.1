@@ -1,6 +1,7 @@
 import World2 from "./World2";
 import Imgs from "../Imgs";
 import Arena5 from "./Arena5";
+import "../style.css"
 
 function App() {
     return (

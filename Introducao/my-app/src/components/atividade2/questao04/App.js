@@ -2,6 +2,7 @@ import Arena4 from "./Arena4"
 import Hero4 from "./Hero4"
 import Enemy4 from "./Enemy4"
 import Imgs from "../Imgs"
+import "../style.css"
 
 
 function App() {
