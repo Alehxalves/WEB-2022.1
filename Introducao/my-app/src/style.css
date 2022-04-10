@@ -12,8 +12,9 @@
 }
 
 .App {
-    text-align: right;
-
+    font-family: monospace;
+    text-align: center;
+    font-size: 40px;
 }
 
 .arena {
