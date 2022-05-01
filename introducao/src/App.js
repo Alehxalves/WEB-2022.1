@@ -1,6 +1,6 @@
-//import {Component} from "react";
 import React from "react";
 import "./style.css"
+//import {Component} from "react";
 
 // import Questao01 from "./components/Atividade1/Questao01";
 
