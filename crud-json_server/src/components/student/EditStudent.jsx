@@ -1,23 +1,39 @@
+import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { students } from "./data.js";
+import { useParams, useNavigate } from "react-router-dom";
+//import { students } from "./data.js";
 
 const EditStudent = () => {
   const [name, setName] = useState("");
   const [course, setCourse] = useState("");
   const [ira, setIra] = useState(0);
+  const navigate = useNavigate();
 
   const params = useParams();
 
   useEffect(() => {
-    const student = students[params.id];
-    setName(student.name);
-    setCourse(student.course);
-    setIra(student.ira);
-  },[params.id]);
+    axios.get('http://localhost:3001/students/' + params.id)
+      .then(res => {
+        setName(res.data.name);
+        setCourse(res.data.course);
+        setIra(res.data.ira);
+      })
+      .catch(error => console.log(error));
+  }, [params.id]);
 
   const handleSubmit = (event) => {
-    alert(`Name: ${name} \nCourse: ${course}\nIRA: ${ira}`);
+    event.preventDefault()
+    const updatedStudent =
+    {
+      name, course, ira
+    }
+    axios.put('http://localhost:3001/students/' + params.id, updatedStudent)
+      .then(
+        res => {
+          navigate("/listStudent")
+        }
+      )
+      .catch(error => console.log(error))
   };
 
   return (

@@ -1,12 +1,31 @@
+import axios from "axios";
 import React from "react";
-import { professors } from "./dataProfessor";
+import { useEffect, useState } from "react";
 import ProfessorTableRow from "./ProfessorTableRow";
 
 const ListProfessor = () => {
+  const [professors, setProfessors] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:3001/professors")
+      .then(res => setProfessors(res.data))
+      .catch(error => console.log(error))
+  }, [])
+
+  function deleteProfessorById(id) {
+    let professorsTemp = professors;
+    for (let i = 0; i < professors.length; i++) {
+      if (professorsTemp[i].id === id) {
+        professorsTemp.splice(i, 1)
+      }
+    }
+    setProfessors([...professorsTemp]);
+  }
+
   function generateTable() {
     if (!professors) return;
     return professors.map((professor, i) => {
-      return <ProfessorTableRow professor={professor} key={i} />;
+      return <ProfessorTableRow professor={professor} key={i} deleteProfessorById={deleteProfessorById} />;
     });
   }
 

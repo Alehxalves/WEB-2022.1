@@ -1,12 +1,25 @@
 import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const CreateProfessor = () => {
   const [name, setName] = useState("");
   const [university, setUniversity] = useState("");
   const [degree, setDegree] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
-    alert(`Name: ${name} \nUniversity: ${university}\nDegree: ${degree}`);
+    event.preventDefault();
+
+    const newProfessor = {name, university, degree};
+
+    axios.post('http://localhost:3001/professors', newProfessor)
+      .then(res => {
+        console.log(res.data.id)
+        navigate("/listProfessor")
+      })
+      .catch(error => console.log(error))
+    
   };
 
   return (

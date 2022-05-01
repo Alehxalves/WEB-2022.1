@@ -1,10 +1,10 @@
 {
   "students": [
     {
-      "id": 1,
       "name": "Alex Alves",
-      "course": "SI",
-      "ira": 10
+      "course": "ES",
+      "ira": "8.75",
+      "id": 1
     },
     {
       "id": 2,
@@ -23,38 +23,20 @@
       "name": "Emily",
       "course": "CC",
       "ira": 9
-    },
-    {
-      "name": "Fulaninho",
-      "course": "CC",
-      "ira": "8.1",
-      "id": 6
     }
   ],
   "professors": [
     {
-      "id": 1,
-      "name": "Fulano",
+      "name": "Alex Alves",
       "university": "UFC",
-      "degree": "Doutorado"
+      "degree": "Doutorado",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Sicrano",
-      "university": "IFCE",
-      "degree": "Doutorado"
-    },
-    {
-      "id": 3,
-      "name": "Fulana de Tal",
-      "university": "UFC",
-      "degree": "Doutorado"
-    },
-    {
-      "id": 4,
-      "name": "Sicrano de Tal",
-      "university": "UFC",
-      "degree": "Doutorado"
+      "name": "Jefferson Silva",
+      "university": "Universidade Federal do Ceará",
+      "degree": "Doutorado",
+      "id": 2
     }
   ]
 }

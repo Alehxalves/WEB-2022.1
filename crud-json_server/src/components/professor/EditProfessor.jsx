@@ -1,24 +1,39 @@
+import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { professors } from "./dataProfessor";
+import { useParams, useNavigate } from "react-router-dom";
+//import { professors } from "./dataProfessor";
 
 const EditProfessor = () => {
   const [name, setName] = useState("");
   const [university, setUniversity] = useState("");
   const [degree, setDegree] = useState(0);
+  const navigate = useNavigate();
 
   const params = useParams();
 
   useEffect(() => {
-    const professor = professors[params.id];
-    setName(professor.name);
-    setUniversity(professor.university);
-    setDegree(professor.degree);
-  },[params.id]);
+    axios.get('http://localhost:3001/professors/' + params.id)
+      .then(res => {
+        setName(res.data.name);
+        setUniversity(res.data.university);
+        setDegree(res.data.degree);
+      })
+      .catch(error => console.log(error));
+  }, [params.id]);
 
   const handleSubmit = (event) => {
-    //aqui código de comunicação com o backend
-    alert(`Nome: ${name} \nCurso: ${university}\nIRA: ${degree}`);
+    event.preventDefault()
+    const updatedProfessor =
+    {
+      name, university, degree
+    }
+    axios.put('http://localhost:3001/professors/' + params.id, updatedProfessor)
+      .then(
+        res => {
+          navigate("/listProfessor")
+        }
+      )
+      .catch(error => console.log(error))
   };
 
   return (
