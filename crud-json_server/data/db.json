@@ -1,0 +1,60 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Alex Alves",
+      "course": "SI",
+      "ira": 10
+    },
+    {
+      "id": 2,
+      "name": "Joao",
+      "course": "EC",
+      "ira": 7
+    },
+    {
+      "id": 3,
+      "name": "Maria",
+      "course": "ES",
+      "ira": 9.1
+    },
+    {
+      "id": 4,
+      "name": "Emily",
+      "course": "CC",
+      "ira": 9
+    },
+    {
+      "name": "Fulaninho",
+      "course": "CC",
+      "ira": "8.1",
+      "id": 6
+    }
+  ],
+  "professors": [
+    {
+      "id": 1,
+      "name": "Fulano",
+      "university": "UFC",
+      "degree": "Doutorado"
+    },
+    {
+      "id": 2,
+      "name": "Sicrano",
+      "university": "IFCE",
+      "degree": "Doutorado"
+    },
+    {
+      "id": 3,
+      "name": "Fulana de Tal",
+      "university": "UFC",
+      "degree": "Doutorado"
+    },
+    {
+      "id": 4,
+      "name": "Sicrano de Tal",
+      "university": "UFC",
+      "degree": "Doutorado"
+    }
+  ]
+}
