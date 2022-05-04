@@ -1,0 +1,42 @@
+{
+  "students": [
+    {
+      "name": "Alex Alves",
+      "course": "ES",
+      "ira": "8.75",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Joao",
+      "course": "EC",
+      "ira": 7
+    },
+    {
+      "id": 3,
+      "name": "Maria",
+      "course": "ES",
+      "ira": 9.1
+    },
+    {
+      "id": 4,
+      "name": "Emily",
+      "course": "CC",
+      "ira": 9
+    }
+  ],
+  "professors": [
+    {
+      "name": "Alex Alves",
+      "university": "UFC",
+      "degree": "Doutorado",
+      "id": 1
+    },
+    {
+      "name": "Jefferson Silva",
+      "university": "Universidade Federal do Ceará",
+      "degree": "Doutorado",
+      "id": 2
+    }
+  ]
+}
