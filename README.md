@@ -1,1 +1,1 @@
-# Introdução Disciplina WEB 2022.1 UFC
+# Disciplina de Desenvolvimento Web 2022.1 UFC
