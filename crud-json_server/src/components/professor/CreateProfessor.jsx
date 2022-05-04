@@ -13,9 +13,9 @@ const CreateProfessor = () => {
 
     const newProfessor = {name, university, degree};
 
-    axios.post('http://localhost:3002/crud/professors/create', newProfessor)
+    axios.post('http://localhost:3001/professors/', newProfessor)
       .then(res => {
-        console.log(res.data._id)
+        console.log(res.data.id)
         alert(`Professor ${name} criado com sucesso.`);
         navigate("/listProfessor")
       })

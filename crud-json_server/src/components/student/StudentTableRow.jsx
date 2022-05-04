@@ -4,14 +4,14 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const StudentTableRow = (props) => {
-  const { _id, name, course, ira } = props.student;
+  const { id, name, course, ira } = props.student;
   const navigate = useNavigate();
 
   function deleteStudent() {
-    if (window.confirm(`Deseja excluir o elemento de ID: ${_id}?`)) {
-      axios.delete(`http://localhost:3002/crud/students/delete/${_id}`)
+    if (window.confirm(`Deseja excluir o elemento de ID: ${id}?`)) {
+      axios.delete(`http://localhost:3001/students/${id}`)
         .then(response => {
-          props.deleteStudentById(_id)
+          props.deleteStudentById(id)
           navigate("/listStudent");
         })
         .catch(error => console.log(error))
@@ -21,12 +21,12 @@ const StudentTableRow = (props) => {
 
   return (
     <tr>
-      <td>{_id}</td>
+      <td>{id}</td>
       <td>{name}</td>
       <td>{course}</td>
       <td>{ira}</td>
       <td>
-        <Link to={`/editStudent/${_id}`} className="btn btn-warning">
+        <Link to={`/editStudent/${id}`} className="btn btn-warning">
           Edit
         </Link>
       </td>

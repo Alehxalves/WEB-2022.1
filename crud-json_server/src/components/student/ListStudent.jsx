@@ -6,15 +6,15 @@ const ListStudent = () => {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/crud/students/list")
+    axios.get("http://localhost:3001/students")
       .then(res => setStudents(res.data))
       .catch(error => console.log(error))
   }, [])
 
-  function deleteStudentById(_id) {
+  function deleteStudentById(id) {
     let studentsTemp = students;
     for (let i = 0; i < students.length; i++) {
-      if (studentsTemp[i]._id === _id) {
+      if (studentsTemp[i].id === id) {
         studentsTemp.splice(i, 1)
       }
     }

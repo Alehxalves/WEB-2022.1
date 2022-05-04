@@ -12,7 +12,7 @@ const EditStudent = () => {
   const params = useParams();
 
   useEffect(() => {
-    axios.get('http://localhost:3002/crud/students/retrieve/' + params.id)
+    axios.get('http://localhost:3001/students/' + params.id)
       .then(res => {
         setName(res.data.name);
         setCourse(res.data.course);
@@ -27,7 +27,7 @@ const EditStudent = () => {
     {
       name, course, ira
     }
-    axios.put('http://localhost:3002/crud/students/update/' + params.id, updatedStudent)
+    axios.put('http://localhost:3001/students/' + params.id, updatedStudent)
       .then(
         res => {
           alert(`Aluno ${name} editado com sucesso.`);
